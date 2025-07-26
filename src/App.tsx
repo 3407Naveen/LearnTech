@@ -318,18 +318,42 @@ function App() {
           <div>
             <h3 className="font-semibold mb-4">Courses</h3>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">HTML Mastery</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">CSS Advanced</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">JavaScript Fundamentals</a></li>
+              <li>
+                <button onClick={() => { setSelectedCourse(courses[0]); setCurrentPage('course-detail'); }} className="hover:text-white transition-colors">
+                  HTML Mastery
+                </button>
+              </li>
+              <li>
+                <button onClick={() => { setSelectedCourse(courses[1]); setCurrentPage('course-detail'); }} className="hover:text-white transition-colors">
+                  CSS Advanced
+                </button>
+              </li>
+              <li>
+                <button onClick={() => { setSelectedCourse(courses[2]); setCurrentPage('course-detail'); }} className="hover:text-white transition-colors">
+                  JavaScript Fundamentals
+                </button>
+              </li>
             </ul>
           </div>
           
           <div>
             <h3 className="font-semibold mb-4">Support</h3>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Community</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
+              <li>
+                <button onClick={() => setCurrentPage('ai-explorer')} className="hover:text-white transition-colors">
+                  Help Center
+                </button>
+              </li>
+              <li>
+                <button onClick={() => alert('Community page coming soon!')} className="hover:text-white transition-colors">
+                  Community
+                </button>
+              </li>
+              <li>
+                <button onClick={() => alert('Contact page coming soon!')} className="hover:text-white transition-colors">
+                  Contact Us
+                </button>
+              </li>
             </ul>
           </div>
           
